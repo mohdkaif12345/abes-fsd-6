@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const readJsonFile = async (path) => {
+ export const readJsonFile = async (path) => {
     try {
         const data = await fs.readFile(path,"utf-8");
         console.log(data);
@@ -9,3 +9,4 @@ const readJsonFile = async (path) => {
 
     }
 }
+export default readJsonFile;
